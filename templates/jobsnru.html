@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+       <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+   <meta charset="utf-8">
+   <title>Simple markers</title>
+   <style>
+     /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+     #map {
+       height: 100%;
+     }
+     /* Optional: Makes the sample page fill the window. */
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+   </style>
+   <title>ColeChain</title>
+ </head>
+ <body>
+
+ <h1>ColeChain</h1>
+
+<div id="map"></div>
+   <script>
+
+     function initMap() {
+       var myLatLng = {lat: 40.712775, lng: -74.005973};
+
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 10,
+         center: myLatLng
+       });
+
+       var marker = new google.maps.Marker({
+         position: myLatLng,
+         map: map,
+         title: 'Hello World!'
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY5itQuf9CYBG_k_VQgwCdJLsjRiFkeUA&callback=initMap">
+   </script>
+ <p> Position: Entry Level Software Engineer
+ </p>
+<form action="/action_page.php">
+ First name: <input type="text" name="fname"><br>
+ Last name: <input type="text" name="lname"><br>
+ <br>
+ Skill #1: <input type = "text" name = "skill"> <select>
+ <option value="volvo">Beginner</option>
+ <option value="saab">Intermediate</option>
+ <option value="opel">Advanced</option>
+ <option value="audi">Expert</option>
+</select>
+ <br>
+   Skill #2: <input type = "text" name = "skill"> <select>
+ <option value="volvo">Beginner</option>
+ <option value="saab">Intermediate</option>
+ <option value="opel">Advanced</option>
+ <option value="audi">Expert</option>
+</select>
+ <br>
+   Skill #3: <input type = "text" name = "skill"> <select>
+ <option value="volvo">Beginner</option>
+ <option value="saab">Intermediate</option>
+ <option value="opel">Advanced</option>
+ <option value="audi">Expert</option>
+</select>
+ <br>
+   Skill #4: <input type = "text" name = "skill"> <select>
+ <option value="volvo">Beginner</option>
+ <option value="saab">Intermediate</option>
+ <option value="opel">Advanced</option>
+ <option value="audi">Expert</option>
+</select>
+ <br>
+   Skill #5: <input type = "text" name = "skill"> <select>
+ <option value="volvo">Beginner</option>
+ <option value="saab">Intermediate</option>
+ <option value="opel">Advanced</option>
+ <option value="audi">Expert</option>
+</select>
+ <br>
+</form>
+<button type="button">Submit</button>
+
+ </body>
+</html>
