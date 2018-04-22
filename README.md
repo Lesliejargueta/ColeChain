@@ -1,1 +1,1 @@
-"# ColeChain" 
+"ColeChain is an awesome app!" 
