@@ -21,9 +21,17 @@ def contact():
 def colebases():
     return render_template('colebases.html', colebases=ColeBases)
 
-@app.route('/colebase/<string:Data>/')
+@app.route('/colebase/<int:Data>/')
 def colebase(Data):
-    return render_template('colebases.html', Data=Data)
+    return render_template('colebase_detail.html', colebase=ColeBases[Data-1])
+
+@app.route('/demo')
+def demo():
+    return render_template('demo.html')
+
+@app.route('/jobsnru')
+def jobsnru():
+    return render_template('jobsnru.html')
 
 if __name__== '__main__':
     app.run(debug=True)

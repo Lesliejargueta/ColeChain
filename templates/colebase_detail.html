@@ -1,10 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1>ColeBase</h1>
+  <h1>{{colebase.Company}}</h1>
   <ul class="list-group">
-    {% for colebase in colebases %}
-      <li class= "list-group-item"><a href="{{colebase.Data}}">{{colebase.Company}}</a></li>
-    {% endfor %}
+      <li class= "list-group-item">{{colebase.NetWorth}}</li>
+      <li class= "list-group-item">{{colebase.Info}}</li>
+      <li class= "list-group-item">{{colebase.DateUpdated}}</li>
   </ul>
 {% endblock %}
